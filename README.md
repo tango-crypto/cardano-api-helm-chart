@@ -18,9 +18,7 @@ echo -n 'v8hlDV0yMAHHlIurYupj' | base64
 # Output: djhoblRWMHlNQUhIbEl1cll1cGo=
 ```
 
-Use the encoded value in your secrets.yaml
-
-Create `secrets.yaml`with the values
+Create `secrets.yaml`with the encoded values
 ```
 apiVersion: v1
 kind: Secret

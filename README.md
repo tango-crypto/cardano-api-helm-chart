@@ -18,7 +18,7 @@ echo -n 'v8hlDV0yMAHHlIurYupj' | base64
 # Output: djhoblRWMHlNQUhIbEl1cll1cGo=
 ```
 
-Create `secrets.yaml`with the encoded values
+Create `secrets.yaml`with the encoded values:
 ```
 apiVersion: v1
 kind: Secret
@@ -40,4 +40,19 @@ data:
   DB_PWD_TESTNET: XXX
   SCYLLA_CONTACT_POINTS: XXX
   KAFKA_HOST: XXX
+```
+
+To view secrets:   
+    ```
+    $ kubectl get secrets
+    ```
+    
+To describe secret:
+    ```
+    $ kubectl describe secret
+    ```
+    
+To view the values of the secret:
+``` 
+$ kubectl get secret cardano-api-secret -o yaml
 ```

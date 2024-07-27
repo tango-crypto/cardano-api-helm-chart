@@ -12,6 +12,7 @@ Kubernetes requires secret data to be base64 encoded to ensure that it can handl
 
 `echo -n 'your-secret-value' | base64`
 
+Example:
 ```
 echo -n 'v8hlDV0yMAHHlIurYupj' | base64
 # Output: djhoblRWMHlNQUhIbEl1cll1cGo=

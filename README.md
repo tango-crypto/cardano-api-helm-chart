@@ -56,6 +56,8 @@ $ kubectl get secret cardano-api-secret -o yaml
 
 ### Install the Helm chart in the default namespace
 ```
+git clone https://github.com/tango-crypto/cardano-api-helm-chart.git
+cd cardano-api-helm-chart
 $ helm install cardano-api .
 ``````
 

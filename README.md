@@ -3,7 +3,9 @@
 ## Secrets encoding
 Kubernetes requires secret data to be base64 encoded to ensure that it can handle arbitrary binary data in a text-based format. This encoding ensures data integrity during transport and storage.
 
-`echo -n 'your-secret-value' | base64`
+```
+echo -n 'your-secret-value' | base64
+```
 
 Example:
 ```
@@ -53,10 +55,14 @@ $ kubectl get secret cardano-api-secret -o yaml
 ## Installing Helm Chart
 
 ### Install the Helm chart in the default namespace
-`helm install cardano-api .`
+```
+$ helm install cardano-api .
+``````
 
 ### Uninstall any previous failed release
-`helm uninstall cardano-api`
+```
+$ helm uninstall cardano-api
+```
 
 List running pods:
 ``````
@@ -67,7 +73,7 @@ cardano-api-cardano-api-helm-chart-76ffcc8bc8-lqxhm   1/1     Running   0       
 
 Get logs:
 ```
-kubectl logs -f cardano-api-cardano-api-helm-chart-76ffcc8bc8-lqxhm
+$ kubectl logs -f cardano-api-cardano-api-helm-chart-76ffcc8bc8-lqxhm
 ```
 Should show the following: 
 

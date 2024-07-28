@@ -4,12 +4,12 @@
 
 Here we are going to build the Docker image for Cardano-api (https://github.com/tango-crypto/cardano-api)
 
-# Build the Docker image
+### Build the Docker image
 ```bash 
 cd cardano-api
 docker build -t javiertc86/cardano-events:latest .
 ```
-# Push the Docker image to the repository
+### Push the Docker image to the repository
 ```
 docker push javiertc86/cardano-events:latest
 ```

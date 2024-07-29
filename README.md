@@ -7,15 +7,15 @@ Here we are going to build the Docker image for Cardano-api (https://github.com/
 ### Build the Docker image
 ```bash 
 $ cd cardano-api
-$ docker build -t javiertc86/cardano-events:latest .
+$ docker build -t javiertc86/cardano-api:latest .
 ```
 ### Push the Docker image to the repository
 ```bash
-$ docker push javiertc86/cardano-events:latest
+$ docker push javiertc86/cardano-api:latest
 ```
 
 ## Use Helm charts
-The first step is to install Helm. Helm is a package manager for Kubernetes that simplifies the deployment and management of applications on Kubernetes clusters.
+The next step is to install Helm. Helm is a package manager for Kubernetes that simplifies the deployment and management of applications on Kubernetes clusters.
 
 To Install Helm on Mac and Linux follow the instructions below:
 
